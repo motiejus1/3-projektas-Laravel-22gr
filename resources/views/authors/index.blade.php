@@ -19,6 +19,8 @@
         <td>{{$author->phone}}</td>
         <td>
             <a href="{{route('author.edit', [$author])}}">Edit</a>
+            <a href="{{route('author.show', [$author])}}">Show</a>
+
             <form method="post" action='{{route('author.destroy', [$author])}}''>
                 @csrf
                 <button type="submit">Delete</button>

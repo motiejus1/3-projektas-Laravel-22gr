@@ -31,5 +31,8 @@ Route::prefix('authors')->group(function() {
     Route::post('update/{author}', 'App\Http\Controllers\AuthorController@update')->name('author.update');
     //Delete
     Route::post('destroy/{author}', 'App\Http\Controllers\AuthorController@destroy' )->name('author.destroy');
+    //Show
+    Route::get('show/{author}', 'App\Http\Controllers\AuthorController@show')->name('author.show');
+
 
 });
