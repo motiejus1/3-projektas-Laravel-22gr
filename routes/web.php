@@ -29,5 +29,7 @@ Route::prefix('authors')->group(function() {
     Route::get('edit/{author}', 'App\Http\Controllers\AuthorController@edit')->name('author.edit');
 
     Route::post('update/{author}', 'App\Http\Controllers\AuthorController@update')->name('author.update');
+    //Delete
+    Route::post('destroy/{author}', 'App\Http\Controllers\AuthorController@destroy' )->name('author.destroy');
 
 });
